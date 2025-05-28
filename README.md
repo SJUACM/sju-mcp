@@ -4,6 +4,21 @@
 
 This MCP (Model Context Protocol) server provides AI-friendly access to SJU ACM's CMS data through a set of tools and resources. Built with Next.js and the `@vercel/mcp-adapter`, it enables AI assistants to query, search, and retrieve content from a Contentful space.
 
+## Add to Cursor
+
+Go to Cursor Settings -> MCP -> Add MCP Server -> paste the JSON below:
+
+```json
+{
+  "mcpServers": {
+    "SJU-ACM-MCP": {
+      "url": "https://sju-mcp.vercel.app/sse"
+    }
+  }
+}
+```
+
+
 ## Features
 
 ### Content Types Supported
